@@ -1,0 +1,116 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --panel-width: calc(100% / 6);
+  --darkblue: #02020c;
+  --white: #fff;
+  --lightgray: #fafafb;
+}
+/* *:not(body){ */
+/* display: none; */
+/* } */
+/* Header */
+#navlist {
+  height: 5rem;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 3rem;
+  background: #000000;
+  font-size: 1.61rem;
+  color: #fff;
+  list-style: none;
+  justify-content: space-around;
+}
+
+li {
+  padding: 1.3rem;
+  cursor:auto;
+  transition: padding 0.3s ease-in .1s;
+}
+
+nav {
+  position:sticky;
+  top: 0px;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  width: 99%;
+}
+
+nav a {
+  color: #fff;
+}
+
+/* Sections */
+section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+#about {
+  background: #f5f5f5;
+}
+
+#projects {
+  background: #eee;
+}
+
+#contact {
+  text-align: center;
+}
+
+#image {
+    padding-top: 4rem;
+    padding-left: rem;
+    
+}
+.home{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+    align-self: center;
+}
+.home.text{
+    display: block;
+}
+
+
+#back {
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--darkblue);
+
+}
+ .page-main {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100vw;
+    clip-path: circle(100%);
+    overflow: hidden;
+    z-index: 99;
+    background: var(--darkblue);
+} 
+.page-main > div {
+    text-align: center;
+    margin: auto;
+}
+#content{
+    display:none;
+}
+
+

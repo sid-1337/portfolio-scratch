@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/@barba/core" defer></script>
+
+  <script src="script.js" defer></script>
+
+</head>
+
+<body data-barba="wrapper">
+  <div id="loader">
+<div id="back">
+  <div class="page-main">
+    <div>
+      <h1>Welcome!</h1>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div id="content">
+  <nav>
+    <ul id="navlist">
+      <!-- <li>
+        <div style="transform: translateY(-7px);">
+          <label class="hamburger">
+            <input type="checkbox">
+            <svg viewBox="0 0 32 32">
+              <path class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+              </path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
+        </div>
+      </li> -->
+      <li><a href="#home">Brief</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main data-barba="container" data-barba-namespace="home">
+    <section id="home" style="padding:0;margin:0">
+      
+    <div class="home">
+      <div id="image" class="home image">
+        <svg width="500" height="400">
+          <mask id="svgmask3">
+            <circle fill="#ffffff" cx="200" cy="200" r="200"></circle>
+          </mask>
+          <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/profile.png" mask="url(#svgmask3)"
+            style="height: 30rem;width: 30rem;"></image>
+        </svg>
+      </div>
+      <div class="home text">
+        
+          
+        
+        <p style="font-size: 1.61rem;margin:1rem;margin-top:1.61;margin-bottom: 0rem ;"> Hi! I'm </p>
+        <p style="font-size: 3.2rem; margin:0;">
+          Siddharth Bajpai</p>
+        <p style="font-size: 1.61rem;margin:0 ;"> • Web Developer</p>
+        <p style="font-size: 1.61rem;margin: 0;"> • InfoSec Enthusiast</p>
+      </div>
+    </div>
+  </main>
+    </section>
+    <section id="education">
+  <h2>Background</h2>
+  <ul>
+      <h3>Bachelor of Technology in Computer Science</h3>
+      <p>Sant Longowal Institute of Engineering and Technology, Sangrur</p>
+      <p>Expected Graduation: July 2026</p>
+      <ul>
+        <li>Relevant Courses: Data Structures, Algorithms, Computer Networks</li>
+        <li>Technologies: Python, Java, C++, HTML/CSS, JavaScript, Bash, Node.js, MongoDB</li>
+        <li>Awards: Reliance Foundation Scholar 2022-23</li>
+      </ul>
+    
+  </ul>
+</section>
+<style>
+/* Education Section */
+
+
+#education h2 {
+  font-size: 32px;
+  text-align: center; 
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}  
+
+#education li {
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 10px solid #0077b5; 
+}
+
+#education li h3 {
+  line-height: 1;  
+  margin-bottom: 8px;
+}
+
+#education li p {
+  color: #555; 
+}
+
+#education li ul {
+  margin-top: 20px;
+  list-style-position: inside;
+}
+
+#education li ul li {
+  line-height: 1.6;
+  padding: 0;
+  border-left: none;
+  margin-bottom: 5px; 
+} 
+
+#education a {
+  color: #0077b5;
+  font-weight: 500;
+  text-decoration: underline;
+}
+</style>
+<section id="contact">
+  
+  <div style='margin:0;padding:2rem;border-radius:3rem;background:#CBCBCB;height:32vh;width:82vw;display:flex;flex-direction:column;justify-content:center;align-items:center'>
+  <p style='font-size:1.6rem'>Let me know if you'd like to connect <br>
+  <div id="imgg" style="display:flex;flex-direction:row;justify-content:space-evenly;width:40vw">
+     <img src="./assets/linkedin.png" alt="LinkedIn" onclick="location.href='https://www.linkedin.com/in/siddharth-bajpai-130b901a8'"
+  style='height:3.2rem;width:3.2rem;cursor:pointer'
+  >    <img src="./assets/github.png" alt="LinkedIn" onclick="location.href='https://www.github.com/sid1337'"
+  style='height:3.2rem;width:3.2rem;cursor:pointer'
+  >     <img src="./assets/instagram.png" alt="Instagram" onclick="location.href='https://www.instagram.com/siddharth._.bajpai/'"
+  style='height:3.2rem;width:3.2rem;cursor:pointer'
+  > 
+  <img src="./assets/email.png" alt="Email" onclick="location.href='mailto:bajpaisiddharth007+pf@gmail.com?subject=Hello'"
+  style='height:3.2rem;width:3.2rem;cursor:pointer'
+                                 
+  >  </div> 
+  </div>
+
+  </div>
+ 
+  </div>
+</section>
+<footer >
+
+  <div class="footer-container">
+
+    <div class="copyright">
+      Copyright © 2024-25 MyPortfolio
+    </div>
+
+  </div>
+
+</footer>
+<style>
+/* Footer */
+
+footer {
+  display: none;
+  background: #fff;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  font-family: "Work Sans", sans-serif;  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #888;
+}
+</style>
+</div>
+</body>
+
+</html>
